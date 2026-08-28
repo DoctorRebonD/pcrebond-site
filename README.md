@@ -1,25 +1,7 @@
-PC Rebond — Site V2.2
+# PC Rebond — reprise depuis la V1
+Version reconstruite sur le squelette et les proportions de la V1.
 
-Version GitHub prête à déployer. Le processus « Comment nous agissons » utilise désormais six visuels illustrés sans numérotation, conformément à la maquette validée.
+Ordre : bandeau > bannière > présentation > naissance de PC Rebond > solidarité/sinistres > don matériel > soutien financier > DoctorRebonD / règlement / contact > footer.
 
-# PC Rebond — Site V2
-
-Version 2 du site statique officiel PC Rebond.
-
-## Déploiement
-Le dépôt GitHub peut être relié directement à Cloudflare Workers & Pages.
-Aucune compilation n'est nécessaire : `index.html` est à la racine.
-
-## Fichiers principaux
-- `index.html` : page d'accueil
-- `reglement.html` : règlement intérieur public
-- `styles.css` : identité visuelle et responsive
-- `script.js` : menu mobile et année automatique
-- `assets/` : logo et images
-
-## À remplacer quand disponibles
-- Liens exacts YouTube / Facebook.
-- Lien du bouton de don financier vers la plateforme associative (ex. HelloAsso) lorsqu'elle sera opérationnelle.
-- Nom de domaine personnalisé : `pcrebond.fr`.
-
-Contact public : pcrebond@gmail.com
+Le bloc « Comment nous agissons » et les trois anciens blocs de valeurs ont été retirés.
+Le paiement en ligne n'est pas activé tant que l'outil associatif dédié n'est pas prêt.
