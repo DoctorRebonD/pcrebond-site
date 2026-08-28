@@ -3,135 +3,245 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PC Rebond — Le numérique solidaire. Collecte, diagnostic, réparation et reconditionnement de matériel informatique pour lui donner une seconde vie et aider celles et ceux qui en ont besoin.">
-  <meta name="theme-color" content="#0a376d">
+  <meta name="description" content="PC Rebond — Le numérique solidaire. Collecte et remise en service d'ordinateurs, smartphones, tablettes, composants, chargeurs et câbles afin d'aider les personnes qui en ont besoin, notamment après un sinistre.">
+  <meta name="theme-color" content="#082f61">
   <title>PC Rebond — Le numérique solidaire</title>
   <meta property="og:title" content="PC Rebond — Le numérique solidaire">
   <meta property="og:description" content="Une seconde vie pour le matériel. Un nouveau départ pour les personnes.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/banniere-pc-rebond.png">
+  <meta property="og:image" content="assets/logo-pc-rebond.png">
   <link rel="icon" href="assets/logo-pc-rebond.png">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
+
   <header class="site-header" id="accueil">
-    <div class="nav-wrap">
+    <div class="nav-shell">
       <a class="brand" href="#accueil" aria-label="PC Rebond — Accueil">
         <img src="assets/logo-pc-rebond.png" alt="Logo PC Rebond">
-        <span>PC Rebond</span>
+        <span class="brand-copy"><strong>PC <em>REBOND</em></strong><small>Le numérique solidaire</small></span>
       </a>
-      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
       <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
-        <a href="#action">Notre action</a>
-        <a href="#donner">Donner du matériel</a>
-        <a href="#soutenir">Nous soutenir</a>
-        <a href="#solidarite">Solidarité</a>
-        <a href="#actualites">Actualités & Contact</a>
+        <a href="#action">
+          <span class="nav-icon">⌂</span><span>Notre action</span>
+        </a>
+        <a class="nav-material" href="#donner">
+          <span class="nav-icon">▣</span><span>Don matériel</span>
+        </a>
+        <a class="nav-finance" href="#don-financier">
+          <span class="nav-icon">♡</span><span>Don financier</span>
+        </a>
+        <a href="#soutenir"><span class="nav-icon">♧</span><span>Nous soutenir</span></a>
+        <a href="#solidarite"><span class="nav-icon">♢</span><span>Solidarité</span></a>
+        <a href="#actualites"><span class="nav-icon">▤</span><span>Actualités</span></a>
+        <a href="#contact"><span class="nav-icon">✉</span><span>Contact</span></a>
       </nav>
+
+      <div class="top-cta">
+        <a class="top-btn material" href="#donner"><strong>DON MATÉRIEL</strong><span>Je donne du matériel</span></a>
+        <a class="top-btn finance" href="#don-financier"><strong>DON FINANCIER</strong><span>Je donne de l'argent</span></a>
+      </div>
     </div>
   </header>
 
   <main id="contenu">
     <section class="hero">
-      <div class="hero-visual" role="img" aria-label="Bannière PC Rebond — Le numérique solidaire"></div>
-      <div class="hero-overlay">
-        <div class="hero-card">
-          <p class="eyebrow">Le numérique solidaire</p>
-          <h1>Une seconde vie pour le matériel.<br><span>Un nouveau départ pour les personnes.</span></h1>
-          <p class="hero-copy">PC Rebond met les compétences informatiques au service de la solidarité : récupérer, diagnostiquer, réparer et reconditionner du matériel pour le rendre utile à nouveau.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#donner">Donner du matériel</a>
-            <a class="btn btn-secondary" href="#soutenir">Soutenir PC Rebond</a>
+      <div class="hero-copy">
+        <p class="eyebrow">Le numérique solidaire</p>
+        <h1>Une seconde vie<br>pour le matériel.<br><span>Un nouveau départ<br>pour les personnes.</span></h1>
+        <p>PC Rebond met les compétences informatiques au service de la solidarité : récupérer, diagnostiquer, réparer et reconditionner du matériel pour le remettre à celles et ceux qui en ont besoin.</p>
+
+        <div class="hero-actions">
+          <a class="hero-btn material" href="#donner">
+            <span class="hero-btn-icon">▣</span>
+            <span><strong>DONNER DU MATÉRIEL</strong><small>Ordinateurs, téléphones, câbles…</small></span>
+            <b>→</b>
+          </a>
+          <a class="hero-btn finance" href="#don-financier">
+            <span class="hero-btn-icon">♡</span>
+            <span><strong>FAIRE UN DON</strong><small>Je donne de l'argent</small></span>
+            <b>→</b>
+          </a>
+        </div>
+
+        <div class="hero-values" aria-label="Les principes de PC Rebond">
+          <span>↻ Récupérer</span><span>⌕ Réparer</span><span>♡ Réemployer</span><span>♧ Aider</span>
+        </div>
+      </div>
+      <div class="hero-image" aria-label="Action de solidarité PC Rebond après un sinistre" role="img"></div>
+    </section>
+
+    <section class="process section" id="action">
+      <div class="wide">
+        <p class="section-kicker">Comment nous agissons</p>
+        <div class="process-row">
+          <article>
+            <span class="step-number">01</span><span class="process-icon">▣</span>
+            <h3>Collecte</h3><p>Nous récupérons les équipements encore utilisables auprès de particuliers, entreprises, associations et organisations.</p>
+          </article><span class="arrow">→</span>
+          <article>
+            <span class="step-number">02</span><span class="process-icon">⌕</span>
+            <h3>Diagnostic</h3><p>Chaque appareil est testé et évalué afin de déterminer son état et les interventions nécessaires.</p>
+          </article><span class="arrow">→</span>
+          <article>
+            <span class="step-number">03</span><span class="process-icon">⚒</span>
+            <h3>Réparation</h3><p>Nettoyage, remplacement de pièces, remise en état et amélioration lorsque l'intervention reste raisonnable.</p>
+          </article><span class="arrow">→</span>
+          <article>
+            <span class="step-number">04</span><span class="process-icon">▱</span>
+            <h3>Reconditionnement</h3><p>Effacement des données, installation, mises à jour et tests complets avant une seconde vie.</p>
+          </article><span class="arrow">→</span>
+          <article>
+            <span class="step-number">05</span><span class="process-icon">♡</span>
+            <h3>Redistribution</h3><p>Le matériel est remis à des personnes qui en ont besoin via des actions solidaires, dons ou cessions solidaires.</p>
+          </article><span class="arrow">→</span>
+          <article>
+            <span class="step-number">06</span><span class="process-icon">♻</span>
+            <h3>Réemploi & recyclage</h3><p>Les pièces encore utiles sont réemployées. Le reste est orienté vers une filière de recyclage responsable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="solidarity" id="solidarite">
+      <div class="solidarity-photo" aria-hidden="true"></div>
+      <div class="solidarity-copy">
+        <p class="section-kicker light">Solidarité</p>
+        <h2>Répondre aussi aux situations exceptionnelles</h2>
+        <p>Un incendie, une inondation, une tempête ou un autre sinistre peut tout faire disparaître en quelques heures : logement, affaires personnelles et équipements numériques. Lorsqu'une personne a tout perdu, devoir racheter immédiatement un ordinateur ou un téléphone ajoute encore une charge financière à une situation déjà difficile.</p>
+        <p>Pourtant, ces outils peuvent devenir essentiels pour <strong>retrouver un emploi ou reprendre son activité</strong>, suivre une formation, permettre aux enfants d'étudier, effectuer des démarches administratives, accéder à ses droits, rechercher un logement, communiquer avec les organismes et rester en contact avec ses proches.</p>
+        <p>PC Rebond veut pouvoir mobiliser rapidement du matériel pour aider les personnes sinistrées à retrouver des moyens concrets d'avancer, de préserver leurs ressources financières et de reconstruire leur autonomie.</p>
+        <div class="solidarity-points">
+          <span>▣ Travail & recherche d'emploi</span>
+          <span>▤ Études & formation</span>
+          <span>☑ Démarches & accès aux droits</span>
+          <span>♡ Autonomie & dignité retrouvées</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="donation-material section" id="donner">
+      <div class="wide donation-grid">
+        <div class="donation-intro">
+          <p class="section-kicker">Donner du matériel</p>
+          <h2>Aidez quelqu'un avec votre ancien matériel ou un appareil réparable</h2>
+          <p>Particuliers, entreprises, associations, administrations et autres organisations : un équipement inutilisé peut encore rendre service et faire une vraie différence.</p>
+          <p>Nous recherchons notamment : ordinateurs portables et fixes, écrans, smartphones, tablettes, composants, chargeurs, alimentations, claviers, souris, matériel réseau et <strong>tous types de câbles utiles</strong> : USB, USB-C, HDMI, DisplayPort, Ethernet, audio, vidéo, alimentation…</p>
+        </div>
+
+        <div class="policy-card">
+          <h3>✓ Nous acceptons volontiers</h3>
+          <ul>
+            <li>Matériel <strong>fonctionnel</strong>, en état <strong>correct ou réparable</strong>.</li>
+            <li>Appareils <strong>complets et non verrouillés</strong> lorsque cela s'applique.</li>
+            <li>Matériel en panne lorsqu'une remise en état reste raisonnablement possible.</li>
+            <li>Accessoires, chargeurs, composants et câbles encore utiles.</li>
+          </ul>
+          <h3 class="warning">✕ Avant de nous apporter du matériel très abîmé</h3>
+          <p>Un appareil totalement détruit, fortement incomplet ou manifestement inexploitable ne nous aide pas forcément. En cas de doute, envoyez-nous quelques photos avant de vous déplacer.</p>
+        </div>
+
+        <div class="proposal-card">
+          <p class="proposal-title">Comment faire un don de matériel ?</p>
+          <div class="proposal-steps">
+            <div><b>1. ÉCRIVEZ-NOUS</b><span>Décrivez votre matériel et sa quantité.</span></div>
+            <div><b>2. ORGANISATION</b><span>Nous convenons ensemble du dépôt ou de l'enlèvement.</span></div>
+            <div><b>3. IMPACT</b><span>Votre matériel retrouve une utilité et peut changer une vie.</span></div>
+          </div>
+          <a class="btn material full" href="mailto:pcrebond@gmail.com?subject=Proposition%20de%20don%20de%20mat%C3%A9riel&body=Bonjour%20PC%20Rebond%2C%0A%0AType%20de%20mat%C3%A9riel%20%3A%0AQuantit%C3%A9%20%3A%0AMarque%20%2F%20mod%C3%A8le%20%3A%0A%C3%89tat%20%2F%20panne%20connue%20%3A%0ACommune%20%2F%20code%20postal%20%3A%0A%0AMerci.">PROPOSER UN DON DE MATÉRIEL →</a>
+          <a class="email-link" href="mailto:pcrebond@gmail.com">✉ pcrebond@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="financial section" id="don-financier">
+      <div class="wide finance-grid">
+        <aside class="policy-summary">
+          <div class="mini-brand">
+            <img src="assets/logo-pc-rebond.png" alt="PC Rebond">
+            <div><strong>PC Rebond</strong><span>Le numérique solidaire</span></div>
+          </div>
+          <div class="mini-policy">
+            <h3>● Notre politique</h3>
+            <p>Matériel <strong>fonctionnel</strong>, en état <strong>correct ou réparable</strong></p>
+            <p>Appareils <strong>complets et non verrouillés</strong></p>
+            <p><strong>Nettoyage, effacement des données</strong> et tests systématiques</p>
+            <p><strong>Réemploi, don solidaire ou recyclage responsable</strong></p>
+          </div>
+          <p class="info-line">ⓘ Merci de nous contacter avant tout dépôt important (entreprises, associations, administrations).</p>
+        </aside>
+
+        <div class="finance-content">
+          <p class="section-kicker red">Don financier</p>
+          <h2>Pourquoi votre soutien financier compte</h2>
+          <p>Le fonctionnement de PC Rebond ne repose pas seulement sur les dons de matériel. Remettre un équipement en service demande parfois un SSD, de la mémoire, un chargeur, une batterie, une alimentation ou d'autres composants. Il faut aussi nettoyer et sécuriser le matériel, disposer d'outils de diagnostic fiables et pouvoir se déplacer pour collecter ou remettre les équipements.</p>
+          <p><strong>Les moyens collectés servent directement à augmenter notre capacité d'action :</strong></p>
+
+          <div class="funding-uses">
+            <div><span>↗</span><p>Développer et renforcer nos actions solidaires sur le terrain</p></div>
+            <div><span>⚒</span><p>Acheter des pièces et consommables pour réparer</p></div>
+            <div><span>♧</span><p>Augmenter le nombre d'équipements remis en service</p></div>
+            <div><span>♨</span><p>Entretenir, nettoyer et sécuriser le matériel</p></div>
+            <div><span>▣</span><p>S'équiper en outils de diagnostic et d'intervention</p></div>
+            <div><span>⌁</span><p>Assurer les déplacements pour collectes et livraisons</p></div>
+          </div>
+
+          <div class="impact-note">ⓘ Chaque don, même modeste, contribue à remettre un outil essentiel entre les mains d'une personne qui pourra travailler, étudier, effectuer ses démarches, rechercher un emploi ou retrouver davantage d'autonomie.</div>
+
+          <div class="finance-cta">
+            <a class="btn finance" href="mailto:pcrebond@gmail.com?subject=Je%20souhaite%20soutenir%20PC%20Rebond%20financi%C3%A8rement">JE SOUHAITE SOUTENIR PC REBOND →</a>
+            <span>Le paiement en ligne sera relié ici dès que l'outil associatif dédié sera opérationnel.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="origin section">
-      <div class="container narrow">
-        <p class="section-kicker">Pourquoi PC Rebond existe</p>
-        <h2>Des compétences utiles face à une urgence réelle</h2>
-        <p class="lead">PC Rebond est né d'un constat très concret : lors d'incendies et d'autres sinistres, des personnes peuvent perdre en quelques heures leur logement, leurs biens et parfois l'ordinateur ou le téléphone devenu indispensable pour travailler, étudier, effectuer des démarches ou rester en contact.</p>
-        <p>L'idée de départ est simple : utiliser des compétences informatiques pour apporter une aide concrète. Beaucoup d'équipements dorment dans des placards ou sont remplacés alors qu'ils peuvent encore servir. PC Rebond veut créer le lien entre ce matériel disponible et les personnes qui en ont besoin.</p>
+    <section class="lower section" id="soutenir">
+      <div class="wide lower-grid">
+        <article class="doctor-card">
+          <div class="doctor-visual"><img src="assets/doctor-rebond.jpg" alt="Illustration DoctorRebonD"></div>
+          <div class="doctor-copy">
+            <h2>Soutenez <span>DoctorRebonD</span> avec <span>PC RebonD</span></h2>
+            <p>DoctorRebonD met ses compétences dans la remise en service d'appareils numériques au service du projet : contrôle de l'état général, diagnostics, tests, nettoyage, suppression sécurisée des données, préparation des appareils et conseils de bonnes pratiques.</p>
+            <p>À travers des vidéos sur YouTube, DoctorRebonD montre aussi les coulisses des remises en état, explique les contrôles effectués et partage des conseils pour mieux comprendre, entretenir et réemployer le matériel numérique. <strong>Suivre, partager et soutenir ces contenus contribue directement à faire connaître et développer PC Rebond.</strong></p>
+            <a href="#actualites">▶ Découvrir DoctorRebonD sur YouTube →</a>
+          </div>
+        </article>
+
+        <article class="transparency-card">
+          <span class="big-icon">▤</span>
+          <h3>Transparence et règlement</h3>
+          <p>PC Rebond fonctionne avec une volonté de transparence, de traçabilité et de protection des données. Consultez notre règlement intérieur et nos engagements.</p>
+          <a class="btn navy full" href="reglement.html">CONSULTER LE RÈGLEMENT →</a>
+        </article>
+
+        <article class="social-card" id="actualites">
+          <h3>Suivez-nous et restez informés</h3>
+          <p><strong>● YouTube</strong><br><span>Les coulisses de PC Rebond et DoctorRebonD</span></p>
+          <p><strong>● Facebook</strong><br><span>Actualités, collectes et échanges</span></p>
+          <p id="contact"><strong>✉ pcrebond@gmail.com</strong><br><span>Une question ou du matériel à proposer ?</span></p>
+          <a class="email-link" href="mailto:pcrebond@gmail.com">Écrire à PC Rebond →</a>
+        </article>
       </div>
     </section>
 
-    <section class="section section-soft" id="action">
-      <div class="container">
-        <p class="section-kicker">Notre action</p>
-        <h2>Du matériel inutilisé à une aide concrète</h2>
-        <div class="steps">
-          <article class="step"><span class="step-number">01</span><h3>Collecte</h3><p>Ordinateurs, écrans, smartphones, tablettes, composants, chargeurs et accessoires pouvant encore avoir une utilité.</p></article>
-          <article class="step"><span class="step-number">02</span><h3>Diagnostic</h3><p>État général, démarrage, stockage, mémoire, connectique, batterie et principaux composants sont vérifiés.</p></article>
-          <article class="step"><span class="step-number">03</span><h3>Réparation</h3><p>Nettoyage, remplacement de pièces, amélioration et remise en état lorsque l'intervention reste raisonnable.</p></article>
-          <article class="step"><span class="step-number">04</span><h3>Reconditionnement</h3><p>Effacement des données, réinstallation, mises à jour et tests afin de remettre l'équipement en circulation proprement.</p></article>
-          <article class="step"><span class="step-number">05</span><h3>Redistribution</h3><p>Le matériel retrouve une utilité dans le cadre d'actions solidaires, de dons ou de cessions à prix solidaire.</p></article>
-          <article class="step"><span class="step-number">06</span><h3>Réemploi & recyclage</h3><p>Lorsqu'un appareil n'est plus réparable, les pièces utiles peuvent être récupérées et le reste orienté vers une filière adaptée.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="donner">
-      <div class="container split">
-        <div>
-          <p class="section-kicker">Donner du matériel</p>
-          <h2>Votre ancien équipement peut encore servir</h2>
-          <p class="lead">Un ordinateur inutilisé n'est pas forcément un déchet. Même en panne, il peut parfois être réparé, servir de source de pièces ou contribuer à remettre un autre appareil en état.</p>
-          <div class="accepted"><span>PC portables</span><span>PC fixes</span><span>Écrans</span><span>Smartphones</span><span>Tablettes</span><span>Composants</span><span>Chargeurs</span><span>Périphériques</span></div>
-        </div>
-        <aside class="contact-card">
-          <h3>Proposer un don</h3>
-          <p>Pour nous permettre d'évaluer rapidement le matériel, indiquez si possible :</p>
-          <ul><li>le type de matériel et la quantité ;</li><li>la marque et le modèle ;</li><li>son état ou la panne connue ;</li><li>votre commune ou code postal ;</li><li>quelques photos si vous en avez.</li></ul>
-          <div class="contact-actions"><a class="btn btn-primary full" href="mailto:pcrebond@gmail.com?subject=Proposition%20de%20don%20de%20mat%C3%A9riel">Écrire à PC Rebond</a><p class="small">Contact : <strong>pcrebond@gmail.com</strong></p></div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section disaster" id="solidarite">
-      <div class="container">
-        <div class="disaster-card">
-          <div><p class="section-kicker light">Solidarité</p><h2>Répondre aussi aux situations exceptionnelles</h2><p>Incendies, inondations, tempêtes et autres sinistres peuvent laisser des personnes sans équipement essentiel du jour au lendemain. PC Rebond souhaite pouvoir mobiliser du matériel disponible pour répondre à ces besoins, notamment pour les études, le travail et les démarches administratives.</p></div>
-          <div class="impact-quote"><strong>Un ordinateur ou un téléphone peut sembler secondaire.</strong><span>Après un sinistre, il peut pourtant redevenir un outil essentiel pour reconstruire le quotidien.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="soutenir">
-      <div class="container split reverse-mobile">
-        <div class="support-card"><img src="assets/logo-pc-rebond.png" alt="" aria-hidden="true"><div><strong>PC Rebond</strong><span>Le numérique solidaire</span></div></div>
-        <div><p class="section-kicker">Nous soutenir</p><h2>Chaque coup de pouce permet de remettre plus de matériel en circulation</h2><p>Le fonctionnement de PC Rebond nécessite des pièces, SSD, mémoire, chargeurs, produits de nettoyage, outils, consommables et déplacements. Les moyens collectés sont destinés à soutenir les actions du projet et à augmenter le nombre d'équipements pouvant être remis en service.</p><p class="notice">La collecte financière en ligne sera ouverte lorsque les outils associatifs dédiés seront prêts.</p></div>
-      </div>
-    </section>
-
-    <section class="section values">
-      <div class="container"><div class="value-grid">
-        <article><div class="icon">♻️</div><h3>Réemployer plutôt que jeter</h3><p>Donner du temps et de la valeur à ce qui peut encore servir.</p></article>
-        <article><div class="icon">🔧</div><h3>Réparer plutôt que remplacer</h3><p>Une panne ne condamne pas forcément un équipement.</p></article>
-        <article><div class="icon">🤝</div><h3>Transformer en aide concrète</h3><p>Mettre le réemploi numérique au service de personnes qui en ont besoin.</p></article>
-      </div></div>
-    </section>
-
-    <section class="section" id="actualites">
-      <div class="container">
-        <p class="section-kicker">Actualités & Contact</p><h2>Suivre l'aventure PC Rebond</h2>
-        <div class="social-grid">
-          <article class="social-card"><span class="social-label">YouTube</span><h3>Les coulisses de PC Rebond</h3><p>Diagnostics, réparations, transformations, conseils et futures actions solidaires.</p><a href="https://www.youtube.com/" target="_blank" rel="noopener">Voir la chaîne YouTube →</a></article>
-          <article class="social-card"><span class="social-label">Facebook</span><h3>Actualités et échanges</h3><p>Suivez les nouvelles collectes, besoins, projets et actions de PC Rebond.</p><a href="https://www.facebook.com/" target="_blank" rel="noopener">Voir la page Facebook →</a></article>
-          <article class="social-card"><span class="social-label">Contact</span><h3>Une question ou du matériel à proposer ?</h3><p>Le moyen de contact principal pour le moment reste l'e-mail et Messenger.</p><a href="mailto:pcrebond@gmail.com">pcrebond@gmail.com →</a></article>
-        </div>
-        <div class="status-note"><strong>PC Rebond est en cours de structuration.</strong><span>Cette première version du site évoluera avec les actions, les partenariats et les services mis en place.</span></div>
-      </div>
+    <section class="status">
+      <div class="wide"><strong>PC Rebond est en cours de structuration.</strong> Le site et les modalités de soutien évolueront au fur et à mesure de la mise en place des outils associatifs.</div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="wide footer-inner">
       <div class="footer-brand"><img src="assets/logo-pc-rebond.png" alt="PC Rebond"><div><strong>PC Rebond</strong><span>Le numérique solidaire</span></div></div>
       <p>Une seconde vie pour le matériel. Un nouveau départ pour les personnes.</p>
-      <p class="copyright">© <span id="year"></span> PC Rebond</p>
+      <p>© <span id="year"></span> PC Rebond</p>
     </div>
   </footer>
 </body>

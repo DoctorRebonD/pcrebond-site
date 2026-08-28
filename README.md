@@ -1,14 +1,21 @@
-# PC Rebond — Site officiel
+# PC Rebond — Site V2
 
-Première version du site vitrine de **PC Rebond — Le numérique solidaire**.
-
-## Fichiers
-- `index.html` : contenu du site
-- `styles.css` : design responsive
-- `script.js` : menu mobile + année automatique
-- `assets/` : logo et bannière officiels
+Version 2 du site statique officiel PC Rebond.
 
 ## Déploiement
-Le site est conçu pour être déployé gratuitement sur **Cloudflare Pages** depuis GitHub.
+Le dépôt GitHub peut être relié directement à Cloudflare Workers & Pages.
+Aucune compilation n'est nécessaire : `index.html` est à la racine.
 
-Aucune base de données, aucun framework et aucune dépendance ne sont nécessaires pour cette V1.
+## Fichiers principaux
+- `index.html` : page d'accueil
+- `reglement.html` : règlement intérieur public
+- `styles.css` : identité visuelle et responsive
+- `script.js` : menu mobile et année automatique
+- `assets/` : logo et images
+
+## À remplacer quand disponibles
+- Liens exacts YouTube / Facebook.
+- Lien du bouton de don financier vers la plateforme associative (ex. HelloAsso) lorsqu'elle sera opérationnelle.
+- Nom de domaine personnalisé : `pcrebond.fr`.
+
+Contact public : pcrebond@gmail.com
