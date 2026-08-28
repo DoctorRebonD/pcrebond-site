@@ -1,3 +1,7 @@
+PC Rebond — Site V2.2
+
+Version GitHub prête à déployer. Le processus « Comment nous agissons » utilise désormais six visuels illustrés sans numérotation, conformément à la maquette validée.
+
 # PC Rebond — Site V2
 
 Version 2 du site statique officiel PC Rebond.
