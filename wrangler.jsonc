@@ -3,6 +3,6 @@
   "main": "worker.js",
   "compatibility_date": "2026-08-30",
   "assets": { "directory": ".", "binding": "ASSETS", "not_found_handling": "single-page-application", "run_worker_first": ["/api/*", "/media/*"] },
-  "d1_databases": [{ "binding": "DB", "database_name": "pcrebond-data", "database_id": "A_REMPLACER_APRES_CREATION_D1" }],
+  "d1_databases": [{ "binding": "DB", "database_name": "pcrebond-data", "database_id": "e58623e7-a52a-4bdc-9fcc-54b9f833674b" }],
   "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "pcrebond-media" }]
 }
