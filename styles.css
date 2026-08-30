@@ -62,3 +62,18 @@
 .solidarity-mosaic img,.solidarity-mosaic img:first-child{grid-row:auto;width:100%;height:100%;object-fit:cover}
 @media(max-width:850px){.origin-side{grid-template-columns:1fr}.origin-side img{height:250px}.solidarity-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:repeat(2,1fr);min-height:420px}}
 @media(max-width:560px){.solidarity-mosaic{grid-template-columns:1fr;grid-template-rows:none}.solidarity-mosaic img{height:230px}}
+
+/* Correctif responsive mobile 30-08-2026 — conserve le rendu bureau validé */
+@media (max-width:850px){
+  .origin-card{display:grid;grid-template-columns:minmax(0,1fr)!important;column-gap:0}
+  .origin-text{grid-column:1!important;grid-row:auto!important;min-width:0;width:100%}
+  .origin-side{grid-column:1!important;grid-row:auto!important;grid-template-columns:1fr!important;grid-template-rows:none!important;width:100%;margin-top:20px}
+  .origin-visual{grid-column:1!important;width:100%;grid-template-columns:1fr 1fr!important}
+}
+@media (max-width:560px){
+  body{overflow-x:hidden}
+  .container,.hero-inner{width:calc(100% - 28px)}
+  .origin-card,.origin-text,.origin-side,.origin-visual{min-width:0;max-width:100%}
+  .origin-side,.origin-visual{grid-template-columns:1fr!important}
+  .origin-side img,.origin-visual img{width:100%;height:auto;max-height:none}
+}
